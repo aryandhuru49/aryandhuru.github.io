@@ -8800,6 +8800,12 @@ h1, h2, h3, h4, h5,
         color: #fff;
         width: 130px; }
 
+
+.ftco-section .about-info p span:first-child {
+        font-weight: 600;
+        color: #fff;
+        width: 130px; }
+
 .ftco-about .counter-wrap .text p {
   font-size: 20px; }
   .ftco-about .counter-wrap .text p span {
@@ -9703,3 +9709,25 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .skills-section .skill-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      /* color: #ffffff; */
+    }
+    
+    .skills-section .label {
+      min-width: 170px; /* Adjust based on longest label */
+      font-weight: 600;
+      /* color: #ffffff; */
+    }
+    
+    .skills-section .value {
+      flex: 1;
+      color: #ffffff;
+    }
+    
+    .row.d-flex .resume-wrap {
+  height: 100%;
+}
