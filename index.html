@@ -133,7 +133,102 @@
 			</div>
 		</div>
 	</nav>
+
 	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/bg_1.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Aryan Dhuru</span></h1>
+
+								<span id="typing-animation"></span>
+
+								<script>
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									const typingTexts = [
+										'Student  ',
+										'Engineer  ',
+										'Developer   ',
+									];
+
+									function playTypingAnimation(text) {
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200);
+										}
+
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									playTypingAnimation(typingTexts[0]);
+								</script>
+
+								<br>
+								<br>
+								<h2>Cybersecurity and Software Development Enthusiast</h2>
+								<br>
+
+								<div class="linkedin-hero mt-4 text-center"
+									style="display: inline-block; text-align: left;">
+									<a href="https://www.linkedin.com/in/aryandhuru" target="_blank"
+										style="text-decoration: none;">
+										<div class="icon"
+											style="font-size: 2.4rem; color: #f9c74f; margin-bottom: 8px;">
+											<span class="icon-linkedin"></span>
+										</div>
+										<!-- <div style="font-size: 0.95rem; color: #fff;">LinkedIn</div> -->
+									</a>
+								</div>
+
+								<!-- TryHackMe -->
+								<div class="tryhackme-hero mt-4"
+									style="display:inline-block; margin-left:40px; position:relative; top:10px;">
+									<a href="https://tryhackme.com/p/aryandhuru49" target="_blank"
+										style="text-decoration:none;">
+										<div class="icon" style="margin-bottom:0;">
+											<img src="images/THMlogo.png" alt="TryHackMe"
+												style="width:96px; height:auto; display:block;">
+										</div>
+									</a>
+								</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section id="home-section" class="hero">
 		<div class="home-slider  owl-carousel">
 			<div class="slider-item ">
 				<div class="overlay"></div>
@@ -183,9 +278,9 @@
 								<br>
 								<br>
 								<h2>Cybersecurity and Software Development Enthusiast</h2>
-								<!-- <br> -->
+								<br> -->
 
-								<p><a href="https://www.linkedin.com/in/aryandhuru/"
+	<!-- <p><a href="https://www.linkedin.com/in/aryandhuru/"
 										class="btn btn-primary py-3 px-4">LinkedIn</a>
 							</div>
 						</div>
@@ -193,7 +288,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
@@ -271,7 +366,7 @@
 									solutions.</p>
 
 								</p>My background includes working with a variety of security and cloud
-								technologies—ranging from SIEM platforms and endpoint protection tools to firewalls and
+								technologies ranging from SIEM platforms and endpoint protection tools to firewalls and
 								cloud security frameworks, contributing to improved organizational security. On the
 								software side, I write clean, secure, and efficient code in both Python and C++.</p>
 								<p>Motivated by a blend of innovation and security, I’m always seeking to build
@@ -643,59 +738,7 @@
 
 				<div class="col-md-4 d-flex">
 					<div class="resume-wrap ftco-animate">
-						<h2>Real-Time Audio-Enabled Object Detection System</h2>
-						<ul class="mt-4">
-							<li>Applied YOLOv4 for high-accuracy real-time object detection in complex environments.
-							</li>
-							<li>Integrated Gemini API for NLP-based interaction, enabling online search for object
-								descriptions.</li>
-							<li>Improved accessibility by providing robust, real-world performance for visually impaired
-								users.</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-4 d-flex">
-					<div class="resume-wrap ftco-animate">
-						<h2>HTTP Client Implementation in C</h2>
-						<ul class="mt-4">
-							<li>Developed a command-line HTTP/1.1 client for sending requests and parsing responses.
-							</li>
-							<li>Used sans_connect, sans_send_pkt, and sans_recv_pkt for efficient I/O.</li>
-							<li>Ensured clean shutdown and protocol compliance with proper socket management.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<!-- Row 2 -->
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex">
-					<div class="resume-wrap ftco-animate">
-						<h2>HTTP Server Implementation in C</h2>
-						<ul class="mt-4">
-							<li>Designed a minimal server handling GET requests with HTTP/1.1-compliant headers and file
-								responses.</li>
-							<li>Managed connections and data flow with sans_accept, sans_recv_pkt, and sans_send_pkt.</li>
-							<li>Added robust error handling (e.g., 404) and resource cleanup via sans_disconnect.</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-4 d-flex">
-					<div class="resume-wrap ftco-animate">
-						<h2>Gym Membership Application in C++</h2>
-						<ul class="mt-4">
-							<li>Built a multi-device GUI application for membership and benefits management in C++.</li>
-							<li>Integrated InterBase via FireDAC for reliable data storage and retrieval.</li>
-							<li>Implemented full CRUD with real-time event handling and seamless DB connectivity.</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-4 d-flex">
-					<div class="resume-wrap ftco-animate">
-						<h2>Home SOC Lab</h2>
+						<h2>Home SOC (Security Operations Center) Lab</h2>
 						<ul class="mt-4">
 							<li>Designed a simulated SOC environment with pfSense firewall, Windows Server (Active
 								Directory/Domain Controller), and client machines to replicate enterprise access
@@ -707,6 +750,73 @@
 						</ul>
 					</div>
 				</div>
+
+				<div class="col-md-4 d-flex">
+					<div class="resume-wrap ftco-animate">
+						<h2>Network Intrusion Detection System (IDS)</h2>
+						<ul class="mt-4">
+							<li>Developed a two-layer NIDS combining a malicious packet detector built with Logistic
+								Regression and an anomaly detector powered by an autoencoder.</li>
+							<li>Achieved near 100% accuracy on known attack patterns while flagging zero-day,
+								adversarial, and automated threats through reconstruction error–based anomaly detection.
+							</li>
+							<li>Strengthened data security and integrity by enabling proactive detection of both
+								familiar and novel attack vectors.</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<!-- Row 2 -->
+				<div class="row d-flex">
+					<div class="col-md-4 d-flex">
+						<div class="resume-wrap ftco-animate">
+							<h2>HTTP Server Implementation in C</h2>
+							<ul class="mt-4">
+								<li>Designed a minimal server handling GET requests with HTTP/1.1-compliant headers and
+									file
+									responses.</li>
+								<li>Managed connections and data flow with sans_accept, sans_recv_pkt, and
+									sans_send_pkt.</li>
+								<li>Added robust error handling (e.g., 404) and resource cleanup via sans_disconnect.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4 d-flex">
+						<div class="resume-wrap ftco-animate">
+							<h2>HTTP Client Implementation in C</h2>
+							<ul class="mt-4">
+								<li>Developed a command-line HTTP/1.1 client for sending requests and parsing responses.
+								</li>
+								<li>Used sans_connect, sans_send_pkt, and sans_recv_pkt for efficient I/O.</li>
+								<li>Ensured clean shutdown and protocol compliance with proper socket management.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4 d-flex">
+						<div class="resume-wrap ftco-animate">
+							<h2>Real-Time Audio-Enabled Object Detection System</h2>
+							<ul class="mt-4">
+								<li>Applied YOLOv4 for high-accuracy real-time object detection in complex environments.
+								</li>
+								<li>Integrated Gemini API for NLP-based interaction, enabling online search for object
+									descriptions.</li>
+								<li>Improved accessibility by providing robust, real-world performance for visually
+									impaired
+									users.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+
+
 			</div>
 		</div>
 	</section>
@@ -799,4 +909,12 @@
 
 </body>
 
-</html>
+</html><div class="tryhackme-hero mt-4"
+     style="display:inline-block; margin-left:40px; position:relative; top:10px;">
+  <a href="https://tryhackme.com/p/aryandhuru49" target="_blank" style="text-decoration:none;">
+    <div class="icon" style="margin-bottom:0;">
+      <img src="images/THMlogo.png" alt="TryHackMe"
+           style="width:96px; height:auto; display:block;">
+    </div>
+  </a>
+</div>
