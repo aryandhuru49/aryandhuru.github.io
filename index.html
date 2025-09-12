@@ -710,116 +710,89 @@
 
 
 
-	<section class="ftco-section" id="project-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 class="mb-4">Projects</h2>
-					<p>Below are my projects over the years.</p>
-				</div>
-			</div>
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Below are my projects over the years.</p>
+      </div>
+    </div>
 
-			<!-- Row 1 -->
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex">
-					<div class="resume-wrap ftco-animate">
-						<h2>Android App Anti-Cracking & Tamper Detection</h2>
-						<ul class="mt-4">
-							<li>Built a security-focused Android app that validates its own signing certificate
-								(SHA-256) to block tampering and prevent APK repackaging.</li>
-							<li>Added defenses against reverse engineering by detecting emulators, debuggers, and root
-								access, and enforced Play Store installer validation.</li>
-							<li>Enhanced fraud prevention through client-side environment inspection and risky signal
-								detection.</li>
-						</ul>
-					</div>
-				</div>
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>Android App Anti-Cracking & Tamper Detection</h2>
+          <ul class="mt-4">
+            <li>Built a security-focused Android app that validates its own signing certificate (SHA-256) to block tampering and prevent APK repackaging.</li>
+            <li>Added defenses against reverse engineering by detecting emulators, debuggers, and root access, and enforced Play Store installer validation.</li>
+            <li>Enhanced fraud prevention through client-side environment inspection and risky signal detection.</li>
+          </ul>
+        </div>
+      </div>
 
-				<div class="col-md-4 d-flex">
-					<div class="resume-wrap ftco-animate">
-						<h2>Home SOC (Security Operations Center) Lab</h2>
-						<ul class="mt-4">
-							<li>Designed a simulated SOC environment with pfSense firewall, Windows Server (Active
-								Directory/Domain Controller), and client machines to replicate enterprise access
-								controls.</li>
-							<li>Integrated Splunk with the Domain Controller via Universal Forwarder for centralized log
-								monitoring.</li>
-							<li>Practiced real-world incident detection and response workflows in a controlled lab
-								setting.</li>
-						</ul>
-					</div>
-				</div>
+      <div class="col-md-4 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>Home SOC (Security Operations Center) Lab</h2>
+          <ul class="mt-4">
+            <li>Designed a simulated SOC environment with pfSense firewall, Windows Server (Active Directory/Domain Controller), and client machines to replicate enterprise access controls.</li>
+            <li>Integrated Splunk with the Domain Controller via Universal Forwarder for centralized log monitoring.</li>
+            <li>Practiced real-world incident detection and response workflows in a controlled lab setting.</li>
+          </ul>
+        </div>
+      </div>
 
-				<div class="col-md-4 d-flex">
-					<div class="resume-wrap ftco-animate">
-						<h2>Network Intrusion Detection System (IDS)</h2>
-						<ul class="mt-4">
-							<li>Developed a two-layer NIDS combining a malicious packet detector built with Logistic
-								Regression and an anomaly detector powered by an autoencoder.</li>
-							<li>Achieved near 100% accuracy on known attack patterns while flagging zero-day,
-								adversarial, and automated threats through reconstruction error–based anomaly detection.
-							</li>
-							<li>Strengthened data security and integrity by enabling proactive detection of both
-								familiar and novel attack vectors.</li>
-						</ul>
-					</div>
-				</div>
+      <div class="col-md-4 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>Network Intrusion Detection System (IDS)</h2>
+          <ul class="mt-4">
+            <li>Developed a two-layer NIDS combining a malicious packet detector built with Logistic Regression and an anomaly detector powered by an autoencoder.</li>
+            <li>Achieved near 100% accuracy on known attack patterns while flagging zero-day, adversarial, and automated threats through reconstruction error–based anomaly detection.</li>
+            <li>Strengthened data security and integrity by enabling proactive detection of both familiar and novel attack vectors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>HTTP Server Implementation in C</h2>
+          <ul class="mt-4">
+            <li>Designed a minimal server handling GET requests with HTTP/1.1-compliant headers and file responses.</li>
+            <li>Managed connections and data flow with sans_accept, sans_recv_pkt, and sans_send_pkt.</li>
+            <li>Added robust error handling (e.g., 404) and resource cleanup via sans_disconnect.</li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="col-md-4 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>HTTP Client Implementation in C</h2>
+          <ul class="mt-4">
+            <li>Developed a command-line HTTP/1.1 client for sending requests and parsing responses.</li>
+            <li>Used sans_connect, sans_send_pkt, and sans_recv_pkt for efficient I/O.</li>
+            <li>Ensured clean shutdown and protocol compliance with proper socket management.</li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="col-md-4 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>Real-Time Audio-Enabled Object Detection System</h2>
+          <ul class="mt-4">
+            <li>Applied YOLOv4 for high-accuracy real-time object detection in complex environments.</li>
+            <li>Integrated Gemini API for NLP-based interaction, enabling online search for object descriptions.</li>
+            <li>Improved accessibility by providing robust, real-world performance for visually impaired users.</li>
+          </ul>
+        </div>
+      </div>
+    </div> 
 
-				<!-- Row 2 -->
-				<div class="row d-flex">
-					<div class="col-md-4 d-flex">
-						<div class="resume-wrap ftco-animate">
-							<h2>HTTP Server Implementation in C</h2>
-							<ul class="mt-4">
-								<li>Designed a minimal server handling GET requests with HTTP/1.1-compliant headers and
-									file
-									responses.</li>
-								<li>Managed connections and data flow with sans_accept, sans_recv_pkt, and
-									sans_send_pkt.</li>
-								<li>Added robust error handling (e.g., 404) and resource cleanup via sans_disconnect.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-md-4 d-flex">
-						<div class="resume-wrap ftco-animate">
-							<h2>HTTP Client Implementation in C</h2>
-							<ul class="mt-4">
-								<li>Developed a command-line HTTP/1.1 client for sending requests and parsing responses.
-								</li>
-								<li>Used sans_connect, sans_send_pkt, and sans_recv_pkt for efficient I/O.</li>
-								<li>Ensured clean shutdown and protocol compliance with proper socket management.</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-md-4 d-flex">
-						<div class="resume-wrap ftco-animate">
-							<h2>Real-Time Audio-Enabled Object Detection System</h2>
-							<ul class="mt-4">
-								<li>Applied YOLOv4 for high-accuracy real-time object detection in complex environments.
-								</li>
-								<li>Integrated Gemini API for NLP-based interaction, enabling online search for object
-									descriptions.</li>
-								<li>Improved accessibility by providing robust, real-world performance for visually
-									impaired
-									users.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-
-
-
-			</div>
-		</div>
-	</section>
+  </div>
+</section>
 
 
 
