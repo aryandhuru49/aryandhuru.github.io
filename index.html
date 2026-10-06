@@ -106,6 +106,22 @@
 		.zoom-effect:hover {
 			transform: scale(1.1);
 		}
+
+		/* GitHub link at the bottom of each project card */
+		.project-link {
+			display: inline-block;
+			margin-top: 10px;
+			color: #ffbd39;
+			font-weight: 500;
+		}
+
+		.project-link:hover {
+			color: #fff;
+		}
+
+		.project-link .icon-github {
+			margin-right: 6px;
+		}
 	</style>
 
 
@@ -204,6 +220,18 @@
 										<div class="icon" style="margin-bottom:0;">
 											<img src="images/THMlogo.png" alt="TryHackMe"
 												style="width:96px; height:auto; display:block;">
+										</div>
+									</a>
+								</div>
+
+								<!-- GitHub -->
+								<div class="github-hero mt-4 text-center"
+									style="display: inline-block; margin-left: 40px; text-align: left;">
+									<a href="https://github.com/aryandhuru49" target="_blank"
+										style="text-decoration: none;">
+										<div class="icon"
+											style="font-size: 2.4rem; color: #f9c74f; margin-bottom: 8px;">
+											<span class="icon-github"></span>
 										</div>
 									</a>
 								</div>
@@ -314,7 +342,7 @@
 											<!--<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>-->
 											<p><span class="title-s">Course: </span> <span>MS in Computer Science</span>
 											</p>
-											<p><span class="title-s">Address: </span> <span>Bloomington, Indiana</span>
+											<p><span class="title-s">Address: </span> <span>Atlanta, Georgia</span>
 											</p>
 										</div>
 									</div>
@@ -424,6 +452,24 @@
 				<div class="underline"></div>
 			</div>
 			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jun 2026 - Present</span>
+						<h2>Security Engineer</h2>
+						<span class="position">Heartland Community Network,</span>
+						<span class="mt-4">USA</span>
+						<ul class="mt-4">
+							<li>Led DAST scans using OWASP ZAP for a client's SaaS product and uncovered a critical IDOR
+								via an unauthenticated userId parameter on the upload API endpoint.</li>
+							<li>Manually tested for stored XSS, NoSQL injection, rate limiting bypasses, and JWT secret
+								strength, confirming defenses held while uncovering an overly permissive CORS policy
+								allowing requests from any origin.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
 			<div class="row">
 				<div class="col-md-12">
 					<div class="resume-wrap ftco-animate">
@@ -701,7 +747,7 @@
 			<div class="row justify-content-center mt-5">
 				<div class="col-md-6 text-center ftco-animate">
 					<p>
-						<a href="https://drive.google.com/file/d/1IYeaTtRDd7yErRicIa_sIDQCq08tNstm/view?usp=sharing"
+						<a href="https://drive.google.com/file/d/1oEd74hwomOkSLyW2l5ljPnHvgwjPQLGQ/view?usp=drive_link"
 							class="btn btn-primary py-4 px-5" target="_blank">
 							Download CV
 						</a>
@@ -724,6 +770,33 @@
     </div>
 
     <div class="row d-flex">
+      <div class="col-md-6 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>AI SOC Copilot &ndash; LLM Triage &amp; Prompt-Injection Guardrails</h2>
+          <ul class="mt-4">
+            <li>Built an LLM SOC alert-triage copilot that returns a schema-enforced verdict (severity, recommended action, confidence) ready to feed ticketing and SOAR.</li>
+            <li>Designed a four-layer guardrail covering OWASP LLM Top 10 risks &ndash; prompt injection, system-prompt leakage, and improper output handling &ndash; flagging every attempt across a 15-technique attack harness.</li>
+            <li>Extended it to IaC security by triaging 60+ Checkov and Trivy findings in-pipeline.</li>
+            <li>Deployed as a serverless AWS stack (Lambda, DynamoDB, EventBridge, SNS, CloudTrail, SSM) with least-privilege IAM, provisioned via Terraform.</li>
+          </ul>
+          <a href="https://github.com/aryandhuru49/AI-SOC-Copilot-LLM-Triage-Prompt-Injection-Guardrails" target="_blank" class="project-link"><span class="icon-github"></span> View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="resume-wrap ftco-animate">
+          <h2>AWS Insider Threat Detection</h2>
+          <ul class="mt-4">
+            <li>Built a detection engine that flags privilege misuse by correlating signals from CloudTrail, GuardDuty, Security Hub, VPC Flow Logs, and IAM Access Analyzer.</li>
+            <li>An EventBridge-scheduled Lambda (boto3) compares user activity against a behavioral baseline &ndash; new buckets, roles, regions, off-hours access, and 100MB+ data transfers.</li>
+            <li>Computes a weighted risk score, writes an ASFF finding to Security Hub on every run, and alerts via SNS when the score crosses the threshold.</li>
+            <li>Designed for resilience with per-service fault isolation, so one unavailable service degrades a single signal instead of failing the pipeline.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex">
       <div class="col-md-4 d-flex">
         <div class="resume-wrap ftco-animate">
           <h2>Android App Anti-Cracking & Tamper Detection</h2>
@@ -732,6 +805,7 @@
             <li>Added defenses against reverse engineering by detecting emulators, debuggers, and root access, and enforced Play Store installer validation.</li>
             <li>Enhanced fraud prevention through client-side environment inspection and risky signal detection.</li>
           </ul>
+          <a href="https://github.com/aryandhuru49/Android-Anti-Cracking-App" target="_blank" class="project-link"><span class="icon-github"></span> View on GitHub</a>
         </div>
       </div>
 
@@ -743,6 +817,7 @@
             <li>Integrated Splunk with the Domain Controller via Universal Forwarder for centralized log monitoring.</li>
             <li>Practiced real-world incident detection and response workflows in a controlled lab setting.</li>
           </ul>
+          <a href="https://github.com/aryandhuru49/Home-SOC-Lab" target="_blank" class="project-link"><span class="icon-github"></span> View on GitHub</a>
         </div>
       </div>
 
@@ -750,10 +825,11 @@
         <div class="resume-wrap ftco-animate">
           <h2>Network Intrusion Detection System (IDS)</h2>
           <ul class="mt-4">
-            <li>Developed a two-layer NIDS combining a malicious packet detector built with Logistic Regression and an anomaly detector powered by an autoencoder.</li>
-            <li>Achieved near 100% accuracy on known attack patterns while flagging zero-day, adversarial, and automated threats through reconstruction error–based anomaly detection.</li>
-            <li>Strengthened data security and integrity by enabling proactive detection of both familiar and novel attack vectors.</li>
+            <li>Developed a two-layer AI/ML NIDS combining a Logistic Regression packet classifier with a Vanilla Autoencoder anomaly detector, addressing gaps in signature-based detection.</li>
+            <li>Achieved 98.37% accuracy on known attacks and 98% precision on zero-day anomaly detection.</li>
+            <li>Pre-filtered known attacks at Layer 1 so only clean traffic reaches the Autoencoder, reaching 99% accuracy on benign traffic.</li>
           </ul>
+          <a href="https://github.com/aryandhuru49/Deep-ResNIDS" target="_blank" class="project-link"><span class="icon-github"></span> View on GitHub</a>
         </div>
       </div>
     </div>
@@ -768,6 +844,7 @@
             <li>Managed connections and data flow with sans_accept, sans_recv_pkt, and sans_send_pkt.</li>
             <li>Added robust error handling (e.g., 404) and resource cleanup via sans_disconnect.</li>
           </ul>
+          <a href="https://github.com/aryandhuru49/HTTP-Server" target="_blank" class="project-link"><span class="icon-github"></span> View on GitHub</a>
         </div>
       </div>
 
@@ -779,6 +856,7 @@
             <li>Used sans_connect, sans_send_pkt, and sans_recv_pkt for efficient I/O.</li>
             <li>Ensured clean shutdown and protocol compliance with proper socket management.</li>
           </ul>
+          <a href="https://github.com/aryandhuru49/HTTP-Client" target="_blank" class="project-link"><span class="icon-github"></span> View on GitHub</a>
         </div>
       </div>
 
@@ -817,7 +895,7 @@
 							<span class="icon-map-signs"></span>
 						</div>
 						<h3 class="mb-4">Address</h3>
-						<p>Bloomington, Indiana</p>
+						<p>Atlanta, Georgia</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">

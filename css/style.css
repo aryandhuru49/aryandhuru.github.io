@@ -9732,3 +9732,8 @@ textarea.form-control {
   height: 100%;
 }
 
+/* d-flex columns already stretch the cards; height:100% made the bottom margin overflow, so rows touched */
+#project-section .row.d-flex .resume-wrap {
+  height: auto;
+}
+
