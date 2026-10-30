@@ -107,6 +107,27 @@
 			transform: scale(1.1);
 		}
 
+		/* Skill category names are long, so give the label column more room */
+		.skills-section .label {
+			flex: 0 0 280px;
+			padding-right: 20px;
+		}
+
+		.skills-section .skill-row {
+			margin-bottom: 18px;
+		}
+
+		@media (max-width: 767px) {
+			.skills-section .skill-row {
+				flex-direction: column;
+			}
+
+			.skills-section .label {
+				flex-basis: auto;
+				margin-bottom: 4px;
+			}
+		}
+
 		/* GitHub link at the bottom of each project card */
 		.project-link {
 			display: inline-block;
@@ -676,19 +697,35 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="resume-wrap ftco-animate skills-section">
+						<div class="skill-row"><span class="label">Security Operations &amp; Incident Response:</span><span
+								class="value">SOC Monitoring, Alert Triage, Incident Investigation, Incident Response,
+								Threat Hunting, Incident Containment, Root Cause Analysis, Threat Modeling, Phishing
+								Analysis, Malware Triage, Digital Forensics, SOAR Playbooks, MITRE ATT&amp;CK,
+								ServiceNow</span></div>
+						<div class="skill-row"><span class="label">SIEM, Detection Engineering &amp; Endpoint
+								Security:</span><span class="value">Splunk Enterprise Security, Microsoft Sentinel, IBM
+								QRadar, CrowdStrike Falcon, Microsoft Defender, Microsoft Defender for Cloud Apps, SPL,
+								KQL, Sysmon, Log Correlation, Detection Rule Development, Alert Tuning, UEBA, EDR</span>
+						</div>
+						<div class="skill-row"><span class="label">Identity, Network &amp; Vulnerability
+								Security:</span><span class="value">Microsoft Entra ID, Active Directory, Okta, MFA, RBAC,
+								Zero Trust Security, Privileged Access Monitoring, Check Point SmartConsole, Zscaler,
+								pfSense, IDS/IPS, DLP, Nmap, Wireshark, Rapid7 InsightVM, Tenable Nessus, Burp Suite,
+								Ostorlab, Vulnerability Management, OWASP Top 10, CVSS, Encryption, TCP/IP, HTTP/HTTPS,
+								DNS, SMTP</span></div>
+						<div class="skill-row"><span class="label">Threat Intelligence &amp; Security
+								Testing:</span><span class="value">VirusTotal, IBM X-Force, AlienVault OTX, OSINT, IOC
+								Analysis, PhishER, SPF, DKIM, DMARC, Kali Linux, Kerberoasting, Pass-the-Hash, DCSync,
+								Frida, Penetration Testing, API Security Testing, Android Security Assessment</span></div>
+						<div class="skill-row"><span class="label">Security Automation, Cloud &amp;
+								Compliance:</span><span class="value">Python, AWS, AWS Lambda, DynamoDB, EventBridge, SNS,
+								CloudTrail, IAM, Azure Security, Azure Security Center, GitHub Actions, Semgrep, Checkov,
+								Trivy, Infrastructure as Code (IaC), CI/CD Security, LLM Security, Prompt Injection
+								Defense, NIST CSF, ISO 27001, SOC 2, CIS Controls</span></div>
+						<div class="skill-row"><span class="label">Infrastructure:</span><span class="value">Kubernetes,
+								Docker, Terraform, Jenkins</span></div>
 						<div class="skill-row"><span class="label">Languages:</span><span class="value">C++, Java,
 								JavaScript, Python, SQL, PowerShell</span></div>
-						<div class="skill-row"><span class="label">Tools:</span><span class="value">Burp Suite,
-								Checkpoint Firewall, Nessus, Nmap, Wireshark, Rapid7, CrowdStrike Falcon, PhishER,
-								Microsoft Sentinel, ServiceNow, Kali Linux, Microsoft Defender, Azure Security Center,
-								Microsoft Excel, Microsoft Word</span></div>
-						<div class="skill-row"><span class="label">Technologies:</span><span class="value">Azure
-								Security, AWS, Kubernetes, Incident Response, Threat Modeling, Vulnerability Management,
-								SIEM, SOAR, IDS/IPS, EDR, OWASP Top 10, Anti-Phishing, Encryption</span></div>
-						<div class="skill-row"><span class="label">Network Protocols:</span><span class="value">TCP/IP,
-								HTTP, HTTPS, DNS, SMTP</span></div>
-						<div class="skill-row"><span class="label">Security Standards:</span><span class="value">NIST
-								CSF, SOC 2, ISO/IEC 27001</span></div>
 					</div>
 
 				</div>
